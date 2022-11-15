@@ -1,4 +1,7 @@
+import 'package:book_rental_app/pages/book_details.dart';
 import 'package:flutter/material.dart';
+
+
 class Books extends StatefulWidget {
   // const Books({Key? key}) : super(key: key);
   @override
@@ -75,7 +78,8 @@ class Single_book extends StatelessWidget {
       child: Hero(
           tag: book_name,
           child: Material(
-            child: InkWell(onTap: (){},
+            child: InkWell(onTap:()=> Navigator.of(context).push(
+                new MaterialPageRoute(builder: (context) => new BookDetails())),
               child: GridTile(
                   footer: Container(
                     color: Colors.white70,
