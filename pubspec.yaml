@@ -67,6 +67,19 @@ flutter:
     - images/img.jpg
     - images/img2.jpg
     - images/img3.jpg
+    - images/h1.jpg
+    - images/Biography (1).jpg
+    - images/Business2.jpg
+    - images/Children3.jpg
+    - images/educational.jpg
+    - images/Historic.jpg
+    - images/Comic Book.jpg
+    - images/Religious.jpg
+    - images/Romance.jpg
+    - images/books/EducationalB.png
+    - images/books/HistoricB.png
+    - images/books/ReligiousB.png
+    - images/books/RomanticB.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

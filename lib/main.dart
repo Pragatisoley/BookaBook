@@ -1,6 +1,10 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:book_rental_app/components/horizontal_axis.dart';
+import 'package:book_rental_app/components/horizontal_axis2.dart';
+import 'package:book_rental_app/components/Books.dart';
+
 void main() {
   runApp(
       MaterialApp(
@@ -25,7 +29,7 @@ void main() {
              AssetImage('images/img2.jpg'),
              AssetImage('images/img3.jpg'),
            ],
-             autoplay: false,
+             autoplay: true,
             animationCurve: Curves.fastOutSlowIn,
            animationDuration: Duration(milliseconds: 1000),
        ),
@@ -117,8 +121,25 @@ void main() {
          body: new ListView(
            children: <Widget>[
              image_carousel,
+             //padding Widget
              new Padding( padding: const EdgeInsets.all(8.0),
              child: new Text('Categories'),),
+
+           //  Horizontal list view begins here
+             HorizontalList(),
+             new Padding( padding: const EdgeInsets.all(10.0),
+               child: new Text('Authors'),),
+             HorizontalList2(),
+             new Padding( padding: const EdgeInsets.all(20.0),
+             child: new Text('Recent Reads'),),
+
+             //Grid view
+             Container(
+               height: 320.0,
+               child: Books(),
+             )
+
+
 
            ],
          ),
